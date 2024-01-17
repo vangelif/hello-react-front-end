@@ -3,21 +3,22 @@ import { useDispatch, useSelector } from 'react-redux';
 import fetchGreetings from '../redux/fetchGreetings';
 
 const Greeting = () => {
-    const greeting = useSelector((state) => state.greetings);
-    console.log(greeting.data.message)
-    // console.log(greeting)
+  const greeting = useSelector((state) => state.greetings);
+  console.log(greeting.data.message);
+  // console.log(greeting)
 
-    const dispatch = useDispatch();
-    
-    useEffect(() => {
-        dispatch(fetchGreetings());
-    }, [dispatch]);
-    
-    return(
-        <>
-        <div>{greeting.data.message}</div>;
-        </>
-    )
-    }
+  const dispatch = useDispatch();
 
-    export default Greeting;
+  useEffect(() => {
+    dispatch(fetchGreetings());
+  }, [dispatch]);
+
+  return (
+    <>
+      <div>{greeting.data.message}</div>
+      ;
+    </>
+  );
+};
+
+export default Greeting;
