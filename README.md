@@ -28,6 +28,8 @@
 
 [hello-react-front-end] is the React front end of a full stack project
 
+### LINK TO BACKEND: [HERE](https://github.com/vangelif/hello-rails-back-end)
+
 ## 🛠️ Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
